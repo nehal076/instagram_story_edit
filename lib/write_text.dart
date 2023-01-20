@@ -22,6 +22,8 @@ class _WriteTextState extends State<WriteText> {
                 setState(() {
                   offset = Offset(offset.dx + details.delta.dx,
                       offset.dy + details.delta.dy);
+                  print(details.delta.dx);
+                  print("Offset DX ${offset.dx}");
                 });
               },
               child: SizedBox(
